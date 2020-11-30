@@ -219,9 +219,9 @@ class ModernColorDefinition {
      * @param {ModernTextColorDefinition} text Colors for text elements
      * @param {ModernOptionsDefinition} options Style options for the interface
      */
-    constructor(dark, interface, calendar, text, options) {
+    constructor(dark, interfacex, calendar, text, options) {
         this.dark = dark;
-        this.interface = interface;
+        this.interface = interfacex;
         this.calendar = calendar;
         this.text = text;
         this.options = options;

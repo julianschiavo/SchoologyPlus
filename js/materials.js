@@ -347,7 +347,7 @@
         if (+assignment.allow_dropbox && (gradeInfo.grade === null || gradeInfo.exception)) {
             // "dropboxes," or places to submit documents via Schoology
             // another API call
-            loadedGradeContainer.dropboxes[assignment.id] = (await fetchApiJson(`/sections/${classId}/submissions/${assignment.id}/${userId}`)).revision;
+            loadedGradeContainer.dropboxes[assignment.id] = (await fetchApiJson(`sections/${classId}/submissions/${assignment.id}/${userId}`)).revision;
             Object.freeze(loadedGradeContainer.dropboxes[assignment.id]);
         }
     }

@@ -207,7 +207,7 @@
 
     let notifsMenuContainer = document.querySelector("#header nav button[aria-label$=\"notifications\"], #header nav button[aria-label$=\"notification\"]").parentElement;
     let gradesLoadedPromise = (async function () {
-        let myGrades = await fetchApiJson(`/users/${getUserId()}/grades`);
+//        let myGrades = await fetchApiJson(`users/${getUserId()}/grades`);
 
         let loadedGradeContainer = {};
 

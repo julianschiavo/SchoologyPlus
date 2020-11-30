@@ -1,7 +1,7 @@
 {
     let betaCode = Setting.getValue("beta");
     let betaSection = null;
-    if (betaCode in beta_tests) {
+//    if (betaCode in beta_tests) {
         // Beta Enabled Notice
         let betaTag = createElement("span", ["splus-beta-tag", "splus-track-clicks"], { textContent: "β", id: "beta-tag" });
         betaTag.addEventListener("click", event => openModal("beta-modal"));
@@ -9,7 +9,7 @@
         document.body.append(betaContainer);
         betaSection = createBetaSection(betaCode);
         betaContainer.append(betaSection);
-    }
+//    }
 
     function createBetaSection(name) {
         return createElement("div", ["splus-beta-section"], { id: `splus-beta-section-${name}` }, [
@@ -371,7 +371,7 @@ let modals = [
 
     for (let courseId in courseProfilePicOverrides) {
         if (courseProfilePicOverrides[courseId] == "enabled") {
-            profilePicLoadTasks.push(fetchApiJson("/sections/" + courseId));
+            profilePicLoadTasks.push(fetchApiJson("sections/" + courseId));
         }
     }
 

@@ -1411,7 +1411,6 @@ $(document).ready(function () {
                     e.stopPropagation();
                     ConfirmModal.open("Apply Theme?", `Are you sure you want to apply the theme ${t}?`, ["Apply", "Cancel"], b => {
                         if (b === "Apply") {
-                            trackEvent(`Theme: ${t}`, "apply", "Theme List");
                             chrome.storage.sync.set({ theme: t }, () => location.href = `https://${defaultDomain}`);
                         }
                     });
