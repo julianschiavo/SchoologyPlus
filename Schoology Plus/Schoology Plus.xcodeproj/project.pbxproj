@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9FD56522574F08900142A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD56512574F08900142A22 /* AppDelegate.swift */; };
+		B9FD56552574F08900142A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56532574F08900142A22 /* Main.storyboard */; };
+		B9FD56572574F08900142A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD56562574F08900142A22 /* ViewController.swift */; };
+		B9FD56592574F08A00142A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56582574F08A00142A22 /* Assets.xcassets */; };
+		B9FD56602574F08A00142A22 /* Schoology Plus Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B9FD565F2574F08A00142A22 /* Schoology Plus Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B9FD56652574F08A00142A22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD56642574F08A00142A22 /* Cocoa.framework */; };
+		B9FD56682574F08A00142A22 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FD56672574F08A00142A22 /* SafariWebExtensionHandler.swift */; };
+		B9FD56842574F08A00142A22 /* CODE_OF_CONDUCT.md in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56752574F08A00142A22 /* CODE_OF_CONDUCT.md */; };
+		B9FD56852574F08A00142A22 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56762574F08A00142A22 /* LICENSE */; };
+		B9FD56862574F08A00142A22 /* css in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56772574F08A00142A22 /* css */; };
+		B9FD56872574F08A00142A22 /* imgs in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56782574F08A00142A22 /* imgs */; };
+		B9FD56882574F08A00142A22 /* js in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56792574F08A00142A22 /* js */; };
+		B9FD56892574F08A00142A22 /* default-icons.html in Resources */ = {isa = PBXBuildFile; fileRef = B9FD567A2574F08A00142A22 /* default-icons.html */; };
+		B9FD568A2574F08A00142A22 /* webstore-description.txt in Resources */ = {isa = PBXBuildFile; fileRef = B9FD567B2574F08A00142A22 /* webstore-description.txt */; };
+		B9FD568B2574F08A00142A22 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = B9FD567C2574F08A00142A22 /* PRIVACY.md */; };
+		B9FD568C2574F08A00142A22 /* Schoology Plus in Resources */ = {isa = PBXBuildFile; fileRef = B9FD567D2574F08A00142A22 /* Schoology Plus */; };
+		B9FD568D2574F08A00142A22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B9FD567E2574F08A00142A22 /* README.md */; };
+		B9FD568E2574F08A00142A22 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = B9FD567F2574F08A00142A22 /* CONTRIBUTING.md */; };
+		B9FD568F2574F08A00142A22 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56802574F08A00142A22 /* manifest.json */; };
+		B9FD56902574F08A00142A22 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56812574F08A00142A22 /* lib */; };
+		B9FD56912574F08A00142A22 /* themes in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56822574F08A00142A22 /* themes */; };
+		B9FD56922574F08A00142A22 /* theme-editor.html in Resources */ = {isa = PBXBuildFile; fileRef = B9FD56832574F08A00142A22 /* theme-editor.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9FD56612574F08A00142A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9FD56452574F08900142A22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9FD565E2574F08A00142A22;
+			remoteInfo = "Schoology Plus Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9FD56702574F08A00142A22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B9FD56602574F08A00142A22 /* Schoology Plus Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B9FD564D2574F08900142A22 /* Schoology Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schoology Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FD56502574F08900142A22 /* Schoology_Plus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schoology_Plus.entitlements; sourceTree = "<group>"; };
+		B9FD56512574F08900142A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9FD56542574F08900142A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9FD56562574F08900142A22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9FD56582574F08A00142A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9FD565A2574F08A00142A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FD565F2574F08A00142A22 /* Schoology Plus Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Schoology Plus Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FD56642574F08A00142A22 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B9FD56672574F08A00142A22 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		B9FD56692574F08A00142A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FD566A2574F08A00142A22 /* Schoology_Plus_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schoology_Plus_Extension.entitlements; sourceTree = "<group>"; };
+		B9FD56752574F08A00142A22 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		B9FD56762574F08A00142A22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		B9FD56772574F08A00142A22 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../css; sourceTree = "<group>"; };
+		B9FD56782574F08A00142A22 /* imgs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imgs; path = ../../imgs; sourceTree = "<group>"; };
+		B9FD56792574F08A00142A22 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = ../../js; sourceTree = "<group>"; };
+		B9FD567A2574F08A00142A22 /* default-icons.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "default-icons.html"; path = "../../default-icons.html"; sourceTree = "<group>"; };
+		B9FD567B2574F08A00142A22 /* webstore-description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "webstore-description.txt"; path = "../../webstore-description.txt"; sourceTree = "<group>"; };
+		B9FD567C2574F08A00142A22 /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = PRIVACY.md; path = ../../PRIVACY.md; sourceTree = "<group>"; };
+		B9FD567D2574F08A00142A22 /* Schoology Plus */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Schoology Plus"; sourceTree = SOURCE_ROOT; };
+		B9FD567E2574F08A00142A22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		B9FD567F2574F08A00142A22 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../../CONTRIBUTING.md; sourceTree = "<group>"; };
+		B9FD56802574F08A00142A22 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		B9FD56812574F08A00142A22 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../lib; sourceTree = "<group>"; };
+		B9FD56822574F08A00142A22 /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = themes; path = ../../themes; sourceTree = "<group>"; };
+		B9FD56832574F08A00142A22 /* theme-editor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "theme-editor.html"; path = "../../theme-editor.html"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9FD564A2574F08900142A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9FD565C2574F08A00142A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD56652574F08A00142A22 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9FD56442574F08900142A22 = {
+			isa = PBXGroup;
+			children = (
+				B9FD564F2574F08900142A22 /* Schoology Plus */,
+				B9FD56662574F08A00142A22 /* Schoology Plus Extension */,
+				B9FD56632574F08A00142A22 /* Frameworks */,
+				B9FD564E2574F08900142A22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9FD564E2574F08900142A22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD564D2574F08900142A22 /* Schoology Plus.app */,
+				B9FD565F2574F08A00142A22 /* Schoology Plus Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9FD564F2574F08900142A22 /* Schoology Plus */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD56502574F08900142A22 /* Schoology_Plus.entitlements */,
+				B9FD56512574F08900142A22 /* AppDelegate.swift */,
+				B9FD56532574F08900142A22 /* Main.storyboard */,
+				B9FD56562574F08900142A22 /* ViewController.swift */,
+				B9FD56582574F08A00142A22 /* Assets.xcassets */,
+				B9FD565A2574F08A00142A22 /* Info.plist */,
+			);
+			path = "Schoology Plus";
+			sourceTree = "<group>";
+		};
+		B9FD56632574F08A00142A22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD56642574F08A00142A22 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9FD56662574F08A00142A22 /* Schoology Plus Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD56742574F08A00142A22 /* Resources */,
+				B9FD56672574F08A00142A22 /* SafariWebExtensionHandler.swift */,
+				B9FD56692574F08A00142A22 /* Info.plist */,
+				B9FD566A2574F08A00142A22 /* Schoology_Plus_Extension.entitlements */,
+			);
+			path = "Schoology Plus Extension";
+			sourceTree = "<group>";
+		};
+		B9FD56742574F08A00142A22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD56752574F08A00142A22 /* CODE_OF_CONDUCT.md */,
+				B9FD56762574F08A00142A22 /* LICENSE */,
+				B9FD56772574F08A00142A22 /* css */,
+				B9FD56782574F08A00142A22 /* imgs */,
+				B9FD56792574F08A00142A22 /* js */,
+				B9FD567A2574F08A00142A22 /* default-icons.html */,
+				B9FD567B2574F08A00142A22 /* webstore-description.txt */,
+				B9FD567C2574F08A00142A22 /* PRIVACY.md */,
+				B9FD567D2574F08A00142A22 /* Schoology Plus */,
+				B9FD567E2574F08A00142A22 /* README.md */,
+				B9FD567F2574F08A00142A22 /* CONTRIBUTING.md */,
+				B9FD56802574F08A00142A22 /* manifest.json */,
+				B9FD56812574F08A00142A22 /* lib */,
+				B9FD56822574F08A00142A22 /* themes */,
+				B9FD56832574F08A00142A22 /* theme-editor.html */,
+			);
+			name = Resources;
+			path = "Schoology Plus Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9FD564C2574F08900142A22 /* Schoology Plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FD56712574F08A00142A22 /* Build configuration list for PBXNativeTarget "Schoology Plus" */;
+			buildPhases = (
+				B9FD56492574F08900142A22 /* Sources */,
+				B9FD564A2574F08900142A22 /* Frameworks */,
+				B9FD564B2574F08900142A22 /* Resources */,
+				B9FD56702574F08A00142A22 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9FD56622574F08A00142A22 /* PBXTargetDependency */,
+			);
+			name = "Schoology Plus";
+			productName = "Schoology Plus";
+			productReference = B9FD564D2574F08900142A22 /* Schoology Plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9FD565E2574F08A00142A22 /* Schoology Plus Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FD566D2574F08A00142A22 /* Build configuration list for PBXNativeTarget "Schoology Plus Extension" */;
+			buildPhases = (
+				B9FD565B2574F08A00142A22 /* Sources */,
+				B9FD565C2574F08A00142A22 /* Frameworks */,
+				B9FD565D2574F08A00142A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schoology Plus Extension";
+			productName = "Schoology Plus Extension";
+			productReference = B9FD565F2574F08A00142A22 /* Schoology Plus Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9FD56452574F08900142A22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B9FD564C2574F08900142A22 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B9FD565E2574F08A00142A22 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = B9FD56482574F08900142A22 /* Build configuration list for PBXProject "Schoology Plus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9FD56442574F08900142A22;
+			productRefGroup = B9FD564E2574F08900142A22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9FD564C2574F08900142A22 /* Schoology Plus */,
+				B9FD565E2574F08A00142A22 /* Schoology Plus Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9FD564B2574F08900142A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD56592574F08A00142A22 /* Assets.xcassets in Resources */,
+				B9FD56552574F08900142A22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9FD565D2574F08A00142A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD56912574F08A00142A22 /* themes in Resources */,
+				B9FD56882574F08A00142A22 /* js in Resources */,
+				B9FD568A2574F08A00142A22 /* webstore-description.txt in Resources */,
+				B9FD56922574F08A00142A22 /* theme-editor.html in Resources */,
+				B9FD568D2574F08A00142A22 /* README.md in Resources */,
+				B9FD56892574F08A00142A22 /* default-icons.html in Resources */,
+				B9FD568F2574F08A00142A22 /* manifest.json in Resources */,
+				B9FD568C2574F08A00142A22 /* Schoology Plus in Resources */,
+				B9FD568E2574F08A00142A22 /* CONTRIBUTING.md in Resources */,
+				B9FD56872574F08A00142A22 /* imgs in Resources */,
+				B9FD56902574F08A00142A22 /* lib in Resources */,
+				B9FD56862574F08A00142A22 /* css in Resources */,
+				B9FD56852574F08A00142A22 /* LICENSE in Resources */,
+				B9FD56842574F08A00142A22 /* CODE_OF_CONDUCT.md in Resources */,
+				B9FD568B2574F08A00142A22 /* PRIVACY.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9FD56492574F08900142A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD56572574F08900142A22 /* ViewController.swift in Sources */,
+				B9FD56522574F08900142A22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9FD565B2574F08A00142A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FD56682574F08A00142A22 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9FD56622574F08A00142A22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9FD565E2574F08A00142A22 /* Schoology Plus Extension */;
+			targetProxy = B9FD56612574F08A00142A22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9FD56532574F08900142A22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9FD56542574F08900142A22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9FD566B2574F08A00142A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9FD566C2574F08A00142A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B9FD566E2574F08A00142A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Schoology Plus Extension/Schoology_Plus_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74N8K5J2N7;
+				INFOPLIST_FILE = "Schoology Plus Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.schoologypl.Schoology-Plus.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B9FD566F2574F08A00142A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Schoology Plus Extension/Schoology_Plus_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74N8K5J2N7;
+				INFOPLIST_FILE = "Schoology Plus Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.schoologypl.Schoology-Plus.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B9FD56722574F08A00142A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Schoology Plus/Schoology_Plus.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 74N8K5J2N7;
+				INFOPLIST_FILE = "Schoology Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.schoologypl.Schoology-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B9FD56732574F08A00142A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Schoology Plus/Schoology_Plus.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 74N8K5J2N7;
+				INFOPLIST_FILE = "Schoology Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.schoologypl.Schoology-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9FD56482574F08900142A22 /* Build configuration list for PBXProject "Schoology Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FD566B2574F08A00142A22 /* Debug */,
+				B9FD566C2574F08A00142A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FD566D2574F08A00142A22 /* Build configuration list for PBXNativeTarget "Schoology Plus Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FD566E2574F08A00142A22 /* Debug */,
+				B9FD566F2574F08A00142A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FD56712574F08A00142A22 /* Build configuration list for PBXNativeTarget "Schoology Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FD56722574F08A00142A22 /* Debug */,
+				B9FD56732574F08A00142A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9FD56452574F08900142A22 /* Project object */;
+}
