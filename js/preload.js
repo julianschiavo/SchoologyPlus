@@ -60,7 +60,7 @@ function backgroundPageFetch(url, init, bodyReadType) {
     return new Promise((resolve, reject) => {
         chrome.runtime.sendMessage({ type: "fetch", url: url, params: init, bodyReadType: bodyReadType }, function (response) {
             if (response === undefined || response === null) {
-                Logger.error("[backgroundPageFetch] Response is undefined or null", response, chrome.runtime.lastError);
+                Logger.error("[backgroundPageFetch] Response is undefined or null", url, response, chrome.runtime.lastError);
                 reject("Response is undefined or null. Last error: " + chrome.runtime.lastError);
             }
             if (!response.success) {

@@ -1053,20 +1053,20 @@ var fetchQueue = [];
                 Logger.log(`Error directly fetching max points for (nonentered) assignment ${domAssignId}, reverting to list-search`);
 
                 try {
-                    response = await fetchApi(`users/${getUserId()}/grades?section_id=${courseId}`);
-                    if (!response.ok) {
-                        throw { status: response.status, error: response.statusText };
-                    }
-                    let json = await response.json();
-    
-                    if (json && json.section.length > 0) {
-                        // success case
-                        // note; even if maxGrade is removed from the DOM, this will still work
-                        maxGrade.textContent = " / " + json.section[0].period[0].assignment.filter(x => x.assignment_id == Number.parseInt(domAssignId))[0].max_points;
-                        maxGrade.classList.remove("no-grade");
-                    } else {
-                        throw "List search failed to obtain meaningful response";
-                    }
+//                    response = await fetchApi(`users/${getUserId()}/grades?section_id=${courseId}`);
+//                    if (!response.ok) {
+//                        throw { status: response.status, error: response.statusText };
+//                    }
+//                    let json = await response.json();
+//    
+//                    if (json && json.section.length > 0) {
+//                        // success case
+//                        // note; even if maxGrade is removed from the DOM, this will still work
+//                        maxGrade.textContent = " / " + json.section[0].period[0].assignment.filter(x => x.assignment_id == Number.parseInt(domAssignId))[0].max_points;
+//                        maxGrade.classList.remove("no-grade");
+//                    } else {
+//                        throw "List search failed to obtain meaningful response";
+//                    }
                 } catch (err) {
                     throw { listSearchErr: err, firstTryError: firstTryError };
                 }

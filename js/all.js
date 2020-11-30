@@ -1,67 +1,3 @@
-{
-    let betaCode = Setting.getValue("beta");
-    let betaSection = null;
-//    if (betaCode in beta_tests) {
-        // Beta Enabled Notice
-        let betaTag = createElement("span", ["splus-beta-tag", "splus-track-clicks"], { textContent: "β", id: "beta-tag" });
-        betaTag.addEventListener("click", event => openModal("beta-modal"));
-        let betaContainer = createElement("div", ["splus-beta-container"], {}, [betaTag]);
-        document.body.append(betaContainer);
-        betaSection = createBetaSection(betaCode);
-        betaContainer.append(betaSection);
-//    }
-
-    function createBetaSection(name) {
-        return createElement("div", ["splus-beta-section"], { id: `splus-beta-section-${name}` }, [
-            createElement("h3", [], { textContent: name })
-        ]);
-    }
-
-    function createBetaToggleCheckbox(name, onchange, checked = false, nestingLevel = 1) {
-        return createElement("div", ["splus-beta-toggle"], { style: { paddingLeft: `${(nestingLevel - 1) * 10}px` } }, [
-            createElement("label", [], { textContent: name }),
-            createElement("input", [], { type: "checkbox", checked: checked, onchange: onchange })
-        ]);
-    }
-
-    // Dark Theme Beta
-    if (betaCode == "darktheme") {
-        let newThemeSheet = createElement("link", [], { rel: "stylesheet", href: chrome.runtime.getURL("/css/modern.css") });
-        document.head.append(newThemeSheet);
-        document.documentElement.setAttribute("test-mode", "crazy");
-
-        var darkThemeTheme = Theme.loadFromObject({
-            "color":
-            {
-                "custom":
-                {
-                    "background": "#36393f",
-                    "border": "#40444b",
-                    "hover": "#6fa8dc",
-                    "primary": "#202225"
-                }
-            }, "logo":
-            {
-                "preset": "schoology_plus"
-            },
-            "name": "Dark Theme Test",
-            "version": 2
-        });
-
-        Theme.apply(darkThemeTheme);
-
-        betaSection.append(
-            createBetaToggleCheckbox("Enable new theme engine", event => newThemeSheet.disabled = !event.target.checked, true),
-            createBetaToggleCheckbox("Enable dark theme", event => {
-                document.documentElement.setAttribute("dark", event.target.checked);
-                Theme.apply(event.target.checked ? darkThemeTheme : Theme.byName(Setting.getValue("theme")));
-            }, true),
-            createBetaToggleCheckbox("Enable color test", event => document.documentElement.setAttribute("test", event.target.checked)),
-            createBetaToggleCheckbox("Crazy mode", event => document.documentElement.setAttribute("test-mode", event.target.checked ? "crazy" : "standard"), true, 2)
-        );
-    }
-}
-
 // Check Schoology domain
 {
     const BLACKLISTED_DOMAINS = ["asset-cdn.schoology.com", "developer.schoology.com", "support.schoology.com", "info.schoology.com", "files-cdn.schoology.com", "status.schoology.com", "ui.schoology.com", "www.schoology.com", "api.schoology.com", "developers.schoology.com", "schoology.com", "support.schoology.com", "error-page.schoology.com", "app-msft-teams.schoology.com"];
@@ -122,7 +58,8 @@ let modalFooterText = "Schoology Plus &copy; Aaron Opell, Glen Husman 2017-2020"
 let frame = document.createElement("iframe");
 frame.src = `https://schoologypl.us/changelog?version=${chrome.runtime.getManifest().version}`;
 
-let modals = [
+var modals = []
+modals = [
     new Modal(
         "settings-modal",
         "Schoology Plus Settings",
@@ -204,7 +141,7 @@ let modals = [
                 "",
                 "text",
                 {
-                    enabled: Setting.getValue("analytics") === "enabled"
+                    enabled: true
                 },
                 value => value,
                 undefined,
@@ -331,6 +268,70 @@ let modals = [
         modalFooterText
     ),
 ];
+
+{
+    let betaCode = Setting.getValue("beta");
+    let betaSection = null;
+        //    if (betaCode in beta_tests) {
+        // Beta Enabled Notice
+    let betaTag = createElement("span", ["splus-beta-tag", "splus-track-clicks"], { textContent: "β", id: "beta-tag" });
+    betaTag.addEventListener("click", event => openModal("beta-modal"));
+    let betaContainer = createElement("div", ["splus-beta-container"], {}, [betaTag]);
+    document.body.append(betaContainer);
+    betaSection = createBetaSection(betaCode);
+    betaContainer.append(betaSection);
+        //    }
+    
+    function createBetaSection(name) {
+        return createElement("div", ["splus-beta-section"], { id: `splus-beta-section-${name}` }, [
+                                                                                                   createElement("h3", [], { textContent: name })
+                                                                                                   ]);
+    }
+    
+    function createBetaToggleCheckbox(name, onchange, checked = false, nestingLevel = 1) {
+        return createElement("div", ["splus-beta-toggle"], { style: { paddingLeft: `${(nestingLevel - 1) * 10}px` } }, [
+                                                                                                                        createElement("label", [], { textContent: name }),
+                                                                                                                        createElement("input", [], { type: "checkbox", checked: checked, onchange: onchange })
+                                                                                                                        ]);
+    }
+    
+        // Dark Theme Beta
+//    if (betaCode == "darktheme") {
+        let newThemeSheet = createElement("link", [], { rel: "stylesheet", href: chrome.runtime.getURL("/css/modern.css") });
+        document.head.append(newThemeSheet);
+        document.documentElement.setAttribute("test-mode", "crazy");
+        
+        var darkThemeTheme = Theme.loadFromObject({
+            "color":
+            {
+                "custom":
+                {
+                    "background": "#36393f",
+                    "border": "#40444b",
+                    "hover": "#E51522",
+                    "primary": "#8d1f2b"
+                }
+            }, "logo":
+            {
+                "preset": "schoology_plus"
+            },
+            "name": "Dark Theme Test",
+            "version": 2
+        });
+        
+        Theme.apply(darkThemeTheme);
+        
+        betaSection.append(
+                           createBetaToggleCheckbox("Enable new theme engine", event => newThemeSheet.disabled = !event.target.checked, true),
+                           createBetaToggleCheckbox("Enable dark theme", event => {
+            document.documentElement.setAttribute("dark", event.target.checked);
+            Theme.apply(event.target.checked ? darkThemeTheme : Theme.byName(Setting.getValue("theme")));
+        }, true),
+                           createBetaToggleCheckbox("Enable color test", event => document.documentElement.setAttribute("test", event.target.checked)),
+                           createBetaToggleCheckbox("Crazy mode", event => document.documentElement.setAttribute("test-mode", event.target.checked ? "crazy" : "standard"), true, 2)
+                           );
+//    }
+}
 
 (() => {
     // Run when new version installed

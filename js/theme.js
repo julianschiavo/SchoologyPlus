@@ -43,13 +43,13 @@ class Theme {
         }
 
         // Default icons are for LAUSD only
-        if (isLAUSD()) {
+//        if (isLAUSD()) {
             for (let iconPattern of icons) {
                 if (course.match(new RegExp(iconPattern.regex, 'i'))) {
                     return iconPattern.url;
                 }
             }
-        }
+//        }
 
         return null;
     }
