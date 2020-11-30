@@ -214,10 +214,10 @@
         // assignment grades
         // period is an array of object
         // period[x].assignment is an array of grade objects (the ones we want to enumerate)
-        for (let assignment of myGrades.section.reduce((oa, thisClassGrades) => oa.concat(thisClassGrades.period.reduce((accum, curr) => accum.concat(curr.assignment), [])), [])) {
-            loadedGradeContainer[assignment.assignment_id] = assignment;
-            Object.freeze(assignment);
-        }
+//        for (let assignment of myGrades.section.reduce((oa, thisClassGrades) => oa.concat(thisClassGrades.period.reduce((accum, curr) => accum.concat(curr.assignment), [])), [])) {
+//            loadedGradeContainer[assignment.assignment_id] = assignment;
+//            Object.freeze(assignment);
+//        }
 
         Object.freeze(loadedGradeContainer);
 
