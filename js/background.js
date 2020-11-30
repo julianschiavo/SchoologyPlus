@@ -34,10 +34,10 @@ var Logger = {
     debug: (() => console.debug.bind(window.console, `%c+`, createLogPrefix("lightgreen")))(),
 }
 
-var assignmentNotificationUrl = "https://lms.lausd.net/home/notifications?filter=all";
-var defaultDomain = "lms.lausd.net";
+var assignmentNotificationUrl = "https://cishk.schoology.com/home/notifications?filter=all";
+var defaultDomain = "cishk.schoology.com";
 
-chrome.storage.sync.get({ defaultDomain: "lms.lausd.net" }, s => {
+chrome.storage.sync.get({ defaultDomain: "cishk.schoology.com" }, s => {
     defaultDomain = s.defaultDomain;
     assignmentNotificationUrl = `https://${defaultDomain}/home/notifications?filter=all`;
 });

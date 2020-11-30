@@ -6,9 +6,9 @@ const CURRENT_VERSION = SchoologyTheme.CURRENT_VERSION;
 const placeholderUrl = "https://via.placeholder.com/200x50?text=School+Logo";
 const LAUSD_THEMES = ["LAUSD Orange", "LAUSD Dark Blue"];
 
-var defaultDomain = "lms.lausd.net";
+var defaultDomain = "cishk.schoology.com";
 
-chrome.storage.sync.get({ defaultDomain: "lms.lausd.net" }, s => {
+chrome.storage.sync.get({ defaultDomain: "cishk.schoology.com" }, s => {
     defaultDomain = s.defaultDomain;
 
     if (isLAUSD()) {
@@ -25,7 +25,7 @@ chrome.storage.sync.get({ defaultDomain: "lms.lausd.net" }, s => {
  * @returns {boolean}
  */
 function isLAUSD() {
-    return defaultDomain === "lms.lausd.net";
+    return false;
 }
 
 var allThemes = {};

@@ -265,7 +265,7 @@ function getBrowser() {
  * @returns {boolean}
  */
 function isLAUSD() {
-    return Setting.getValue("defaultDomain") === "lms.lausd.net";
+    return false;
 }
 
 /**
@@ -1086,7 +1086,7 @@ new Setting(
     "defaultDomain",
     "Default Schoology Domain",
     "The website on which Schoology Plus runs. Cannot be changed here.",
-    "lms.lausd.net",
+    "cishk.schoology.com",
     "text",
     {
         disabled: true
