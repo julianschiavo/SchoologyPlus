@@ -1,21 +1,3 @@
-// Inform user about theme
-{
-    if (localStorage["splus-temp-generatedtheme"]) {
-        localStorage.removeItem("splus-temp-generatedtheme");
-
-        showToast(
-            "Theme Generated",
-            "Schoology Plus created a theme that matches your school's theme",
-            "rgb(0,255,0)",
-            {
-                buttons: [
-                    createToastButton("View Themes", "view-themes-button", () => location.href = chrome.runtime.getURL("/theme-editor.html"))
-                ]
-            }
-        );
-    }
-}
-
 {
     let betaCode = Setting.getValue("beta");
     let betaSection = null;
